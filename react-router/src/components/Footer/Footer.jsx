@@ -49,7 +49,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline">
+                  <Link to="https://discordapp.com/users/ankitjangra1021" className="hover:underline" target="_blank">
                     Discord
                   </Link>
                 </li>
@@ -84,7 +84,7 @@ function Footer() {
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-            <Link to="#" className="text-gray-500 hover:text-gray-900">
+            <Link to="https://www.facebook.com/profile.php?id=100012657129224" className="text-gray-500 hover:text-gray-900" target="_blank">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -100,7 +100,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Facebook page</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="https://discordapp.com/users/ankitjangra1021" className="text-gray-500" target="_blank">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -112,7 +112,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="https://x.com/ANKIT102121" className="text-gray-500" target="_blank">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -128,7 +128,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="https://github.com/ankitjangra102121" className="text-gray-500" target="_blank">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
