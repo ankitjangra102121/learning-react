@@ -33,8 +33,8 @@ function Home() {
 
         <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
           <img
-            className="w-96"
-            src="https://i.ibb.co/5BCcDYB/Remote2.png"
+            className="w-126"
+            src="https://images.pexels.com/photos/7114/laptop-mobile.jpg"
             alt="image1"
           />
         </div>
@@ -43,7 +43,7 @@ function Home() {
       <div className="grid  place-items-center sm:mt-20">
         <img
           className="sm:w-96 w-48"
-          src="https://i.ibb.co/2M7rtLk/Remote1.png"
+          src="https://images.pexels.com/photos/7025972/pexels-photo-7025972.jpeg"
           alt="image2"
         />
       </div>
