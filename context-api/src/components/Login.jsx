@@ -10,21 +10,25 @@ function Login() {
     setUser({ username, password })
   };
   return (
-    <div>
-      <h2>Login</h2>
+    <div className="bg-amber-400 p-7 text-center">
+      <h2 className="text-xl font-bold mb-4">Login</h2>
       <input
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         placeholder="username"
+        className="mr-2"
       />
       <input
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="password"
+        className="ml-2"
       />
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleLogin} className="bg-blue-500 text-white p-2 rounded">
+        Login
+      </button>
     </div>
   );
 }
