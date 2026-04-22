@@ -6,8 +6,7 @@ function Todo() {
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
   return (
-    <>
-      <div>Todos</div>
+    <> 
       <ul className="list-none">
         {todos.map((todo) => (
           <li
