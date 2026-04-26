@@ -15,7 +15,18 @@ export class AuthService {
 
   async createAccount({ email, password, name }) {
     try {
-      return await this.account.create(ID.unique(), email, password, name);
+      const user = await this.account.create(
+        ID.unique(),
+        email,
+        password,
+        name,
+      );
+
+      if (user) {
+        return await this.login({ email, password });
+      }
+
+      return user;
     } catch (error) {
       console.error("Signup error:", error.message);
       throw error;
@@ -35,12 +46,18 @@ export class AuthService {
     try {
       return await this.account.get();
     } catch (error) {
+      console.warn("No active session");
       return null;
     }
   }
 
   async logout() {
-    return await this.account.deleteSession("current");
+    try {
+      return await this.account.deleteSessions(); // better than "current"
+    } catch (error) {
+      console.error("Logout error:", error.message);
+      throw error;
+    }
   }
 }
 
