@@ -45,7 +45,7 @@ export class AuthService {
   async getCurrentUser() {
     try {
       return await this.account.get();
-    } catch (error) {
+    } catch {
       console.warn("No active session");
       return null;
     }
